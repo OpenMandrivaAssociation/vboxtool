@@ -15,7 +15,6 @@ URL:		http://sourceforge.net/projects/%{name}/
 Group:		Emulators 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 License:	GPLv3 
-Requires:	virtualbox
 
 
 %description
@@ -61,3 +60,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/init.d/vboxtoolinit
 
 
+%changelog
+* Sat Jan 08 2010 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-3mdv
+- vboxtool is now compatible with VirtualBox OSE.
+
+* Sat Jan 02 2010 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-2mdv
+- Add the 'vboxtoolinit status' command which maps to 'vboxtool show'.
+
+* Thu Dec 31 2009 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-1mdv
+- Vboxtool RPM creation.
