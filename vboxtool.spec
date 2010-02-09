@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Sat Jan 08 2010 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-3mdv
+* Fri Jan 08 2010 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-3mdv
 - vboxtool is now compatible with VirtualBox OSE.
 
 * Sat Jan 02 2010 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-2mdv
