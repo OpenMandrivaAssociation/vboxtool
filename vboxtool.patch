@@ -1,0 +1,24 @@
+diff -p -up script/vboxtool.orig script/vboxtool
+--- script/vboxtool.orig	2009-07-02 23:09:41.000000000 +0200
++++ script/vboxtool	2010-02-11 20:09:06.802424669 +0100
+@@ -398,10 +398,16 @@ loop()
+                 $vbox_command setextradata $uuid $data_id/GuestPort `echo $port_pair | awk 'BEGIN{FS="-"}{print $2}'`
+               done
+             fi
+-            
+-            log "Starting \"$name\" (vrdp=$vrdp_port_config)"
+-            $vbox_command startvm $uuid -type vrdp
+-            log2file "Session \"$name\" started"
++			if [ $vrdp_port_config != "" ]
++	   		then
++					log "Starting \"$name\" (vrdp=$vrdp_port_config)"
++					$vbox_command startvm $uuid -type vrdp
++					log2file "Session \"$name\" started"
++	   		else
++					log "Starting \"$name\" (vrdp=$vrdp_port_config)"
++					$vbox_command startvm $uuid -type headless
++					log2file "Session \"$name\" started"
++	   		fi
+           fi        
+         fi
+       fi
