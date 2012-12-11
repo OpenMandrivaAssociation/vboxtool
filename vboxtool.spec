@@ -70,3 +70,38 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/%{name}/vboxtool.conf 
 %{_prefix}/bin/%{name}
 %{_sysconfdir}/init.d/vboxtoolinit
+
+
+%changelog
+* Sun Feb 14 2010 Stéphane Téletchéa <steletch@mandriva.org> 0.4-1mdv2010.1
++ Revision: 505670
+- Initial Mandriva release
+
+  + Jean Gabriel Hays <janot@mandriva.org>
+    - patch modifications
+    - patchs modifications
+    - spec corrections
+    - New spec file
+    - Spec correction
+    - Patchs correction
+    - MDV patches added
+    - Apply MDV patches
+    - chkconfig line added in intscript
+    - chkconfig added in the initscript
+    - Added LSB compliance
+    - build corrections
+    - First upload
+    - import vboxtool
+
+  + Nicolas Lécureuil <nlecureuil@mandriva.com>
+    - Remove the changelog from the spec file
+
+
+* Sat Jan 08 2010 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-3mdv
+- Vboxtool is now compatible with VirtualBox OSE edition.
+
+* Sat Jan 02 2010 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-2mdv
+- Add the 'vboxtoolinit status' command which maps to 'vboxtool show'.
+
+* Thu Dec 31 2009 Jean-Gabriel HAYS <hays.jg@gmail.com> 0.4-1mdv
+- Vboxtool RPM creation.
