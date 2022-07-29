@@ -5,8 +5,8 @@ Release:		1
 Source0:		https://sourceforge.net/projects/vboxtool/files/vboxtool/%{version}/vboxtool-%{version}.zip
 Source1:		machines.conf
 Source2:		vboxtool.conf
-Patch0:			vboxtool.patch
-Patch1:			vboxtoolinit.patch
+#Patch0:			vboxtool.patch
+#Patch1:			vboxtoolinit.patch
 URL:			http://sourceforge.net/projects/%{name}/ 
 BuildArch:		noarch
 
@@ -24,8 +24,8 @@ Easy control of VM of VirtualBox on a Linux headless server.
 
 %prep 
 %setup -q -T -a0 -c
-%patch0 -p0 -b .patch
-%patch1	-p0 -b .patch
+#patch0 -p0 -b .patch
+#patch1	-p0 -b .patch
 
 chmod 644 readme.txt 
 chmod 644 COPYING.txt 
