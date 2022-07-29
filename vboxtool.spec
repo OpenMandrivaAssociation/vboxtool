@@ -1,19 +1,14 @@
-%define name		vboxtool
-%define version		0.4
-%define release		%mkrel 1 
-
-BuildArch:		noarch
-
-Name:			%{name} 
+Name:			vboxtool
 Summary:		Easy control of virtual machines of VirtualBox on a Linux headless server
-Version:		%{version} 
-Release:		%{release}
-Source0:		%{name}-%{version}.zip
+Version:		0.5
+Release:		1
+Source0:		https://sourceforge.net/projects/vboxtool/files/vboxtool/%{version}/vboxtool-%{version}.zip
 Source1:		machines.conf
 Source2:		vboxtool.conf
 Patch0:			vboxtool.patch
 Patch1:			vboxtoolinit.patch
 URL:			http://sourceforge.net/projects/%{name}/ 
+BuildArch:		noarch
 
 
 Group:			Emulators 
