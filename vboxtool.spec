@@ -7,7 +7,7 @@ Source1:		machines.conf
 Source2:		vboxtool.conf
 #Patch0:			vboxtool.patch
 #Patch1:			vboxtoolinit.patch
-URL:			http://sourceforge.net/projects/%{name}/ 
+URL:			https://sourceforge.net/projects/%{name}/ 
 BuildArch:		noarch
 
 
